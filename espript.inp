@@ -1,0 +1,41 @@
+seq_alignment.fasta              ! aligned sequences (from mafft)
+!cse4.horiz                      ! secondary structures (from DSSP) 
+espript.ps M                     ! postscript output
+.7 .9    R  C                    ! homology criteria default
+8 70 7 -1 0 0 F P N              ! representation
+!@ruler
+@col C1 0.333 0.961 0.349        ! create a new colour named C1
+@nott
+@noname
+!%title
+!
+!K C1 18-73    ! built residues in structure
+!L C1 74-108   ! built residues in structure poly-alanine
+X B 1           ! top secondary structure information is assigned to a chosen sequence
+!Z B 1           ! bottom secondary structure information is assigned to a chosen sequence
+Y B 1           ! sequence numbering is assigned to a chosen sequence
+!Z D 1          ! residue numbering of another sequence, which is the last one by default
+!T D b_mor      ! changes colour of sequence names
+!P D 1          ! calculates hydropathy
+A S all        ! no letters above sec. elements
+@col Z .99 .5 .5 ! create a new colour named C1
+H Z all
+!
+!@B BbA1 BbB1 BbC1 BbC'1 BbE1 BbF1 BbG1 BbA2 BbB2 BbC2 BbC'2 BbE2 BbF2 BbG2
+@sub NP_001800.1 H.sapiens_CENP-A
+@sub XP_004029016.1 G.gorilla_CENP-A
+@sub XP_003308962.1 P.troglodytes_CENP-A
+@sub XP_003270664.1 N.leucogenys_CENP-A
+@sub XP_001087306.1 M.mulatta_CENP-A
+@sub XP_011239001.1 M.musculus_CENP-A
+@sub EHB18906.1 H.glaber_CENP-A
+@sub KFO23359.1 F.damarensis_CENP-A
+@sub NP_012875.2 S.cerevisiae_Cse4
+@sub KTB18012.1 C.glabrata_Cse4
+@sub XP_452757.1 K.lactis_Cse4
+@sub NP_983029.2 E.gossypii_Cse4
+
+.
+1 2 3 4 5 6 7 8 9 10 11 12              !order of the sequences
+.
+
